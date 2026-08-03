@@ -2,7 +2,7 @@
 
 Personal portfolio site for **Yogendra Danwar**, Lead Frontend + AI Engineer.
 
-Live site (GitHub Pages): will be available at your Pages URL after deployment.
+Live site: [theyogendradanwar.github.io/portfolio](https://theyogendradanwar.github.io/portfolio/)
 
 ## Local preview
 
