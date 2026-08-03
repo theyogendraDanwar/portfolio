@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4f5f7" />
     <meta
       name="description"
-      content="Yogendra Danwar — Lead Frontend Engineer, AI Engineer, and Team Leader. Building high-scale consumer apps with React, React Native, Next.js, and TypeScript."
+      content="Yogendra Danwar — Lead Frontend Engineer & creator of Homelab Remote. Crafting polished web and mobile interfaces with React, React Native, Flutter, and TypeScript."
     />
     <meta name="author" content="Yogendra Danwar" />
-    <meta property="og:title" content="Yogendra Danwar — Lead Frontend Engineer | AI Engineer" />
+    <meta property="og:title" content="Yogendra Danwar — Lead Frontend Engineer" />
     <meta
       property="og:description"
-      content="Lead Frontend Engineer with 9+ years building high-scale consumer applications across fintech, telecom, and travel."
+      content="Frontend engineer building high-scale consumer apps — and creator of Homelab Remote."
     />
     <meta property="og:type" content="website" />
-    <title>Yogendra Danwar — Lead Frontend Engineer | AI Engineer</title>
+    <title>Yogendra Danwar — Lead Frontend Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,11 +30,11 @@
   </head>
   <body>
     <header class="site-header" id="top">
-      <a class="logo" href="#top" aria-label="Yogendra Danwar home">Yogendra Danwar</a>
+      <a class="logo" href="#top" aria-label="Yogendra Danwar home">YD</a>
       <nav class="nav" aria-label="Primary">
+        <a href="#project">Project</a>
         <a href="#work">Work</a>
         <a href="#skills">Skills</a>
-        <a href="#wins">Wins</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
@@ -42,6 +43,7 @@
     </header>
 
     <nav class="mobile-nav" aria-label="Mobile" hidden>
+      <a href="#project">Project</a>
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#wins">Wins</a>
@@ -53,29 +55,25 @@
         <div class="hero-media" aria-hidden="true">
           <img
             class="hero-photo"
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=80"
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=2400&q=80"
             alt=""
             width="2400"
             height="1600"
           />
         </div>
         <div class="hero-content">
+          <p class="hero-kicker" data-reveal>Lead Frontend Engineer</p>
           <h1 class="hero-brand">
             <span class="brand-line" data-reveal>Yogendra</span>
             <span class="brand-line" data-reveal>Danwar</span>
           </h1>
           <p class="hero-tagline" data-reveal>
-            Lead Frontend Engineer · AI Engineer · Team Leader
+            Interfaces people trust — React, React Native, Flutter, and TypeScript. Creator of
+            Homelab Remote.
           </p>
           <div class="hero-actions" data-reveal>
-            <a class="btn btn-primary" href="mailto:yogendra.danwar@gmail.com">Email me</a>
-            <a
-              class="btn btn-ghost"
-              href="https://in.linkedin.com/in/yogendradanwar"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
+            <a class="btn btn-primary" href="#project">See Homelab Remote</a>
+            <a class="btn btn-ghost" href="mailto:yogendra.danwar@gmail.com">Email me</a>
           </div>
         </div>
       </section>
@@ -87,35 +85,78 @@
         </div>
         <div class="band-body">
           <p class="lede" data-reveal>
-            Lead Frontend Engineer with 9+ years building high-scale consumer applications across
-            fintech, telecom, and travel.
+            Frontend engineer with 9+ years shipping high-scale consumer interfaces across fintech,
+            telecom, and travel.
           </p>
           <p class="copy" data-reveal>
-            Expertise in React, React Native, Flutter, Next.js, TypeScript, frontend architecture,
-            BFF integration, accessibility, and AI-assisted engineering. Proven track record of
-            delivering products used by millions while leading architecture decisions, mentoring
-            engineers, and driving measurable business outcomes.
+            I design and build fast, accessible product UI — architecture, interaction polish, and
+            measurable outcomes. Stack: React, React Native, Flutter, Next.js, TypeScript, BFF
+            integration, and AI-assisted engineering. Also the creator of
+            <a href="https://theyogendradanwar.github.io/homelab-remote-site/" target="_blank" rel="noopener noreferrer">Homelab Remote</a>.
           </p>
           <dl class="meta" data-reveal>
             <div>
-              <dt>Focus</dt>
-              <dd>Frontend · AI · Architecture</dd>
+              <dt>Craft</dt>
+              <dd>UI systems · Motion · A11y</dd>
             </div>
             <div>
               <dt>Based</dt>
               <dd>Bengaluru, India</dd>
             </div>
             <div>
-              <dt>Open to</dt>
-              <dd>Interesting collaborations</dd>
+              <dt>Side project</dt>
+              <dd>Homelab Remote</dd>
             </div>
           </dl>
         </div>
       </section>
 
-      <section class="ai band" id="ai">
+      <section class="project band" id="project">
         <div class="band-rail">
           <p class="index" data-reveal>02</p>
+          <h2 class="band-title" data-reveal>Project</h2>
+        </div>
+        <div class="band-body project-body">
+          <article class="project-feature" data-reveal>
+            <div class="project-copy">
+              <p class="project-role">Creator</p>
+              <h3>Homelab Remote</h3>
+              <p>
+                A Flutter iOS remote for your self-hosted stack — Sonarr, Radarr, SABnzbd, NZBGet,
+                and more. Status, library, and search on your iPhone. Credentials stay on device.
+              </p>
+              <ul class="project-tags">
+                <li>Flutter</li>
+                <li>iOS</li>
+                <li>Product UI</li>
+                <li>Self-hosted</li>
+              </ul>
+              <a
+                class="btn btn-primary"
+                href="https://theyogendradanwar.github.io/homelab-remote-site/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View product site</a
+              >
+            </div>
+            <div class="project-visual">
+              <div class="phone-frame">
+                <img
+                  src="https://theyogendradanwar.github.io/homelab-remote-site/media/shot-home.webp"
+                  alt="Homelab Remote home screen showing services and downloads"
+                  width="390"
+                  height="844"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ai band" id="ai">
+        <div class="band-rail">
+          <p class="index" data-reveal>03</p>
           <h2 class="band-title" data-reveal>AI</h2>
         </div>
         <div class="band-body">
@@ -129,7 +170,7 @@
 
       <section class="work band" id="work">
         <div class="band-rail">
-          <p class="index" data-reveal>03</p>
+          <p class="index" data-reveal>04</p>
           <h2 class="band-title" data-reveal>Work</h2>
         </div>
         <div class="band-body">
@@ -228,7 +269,7 @@
 
       <section class="skills band" id="skills">
         <div class="band-rail">
-          <p class="index" data-reveal>04</p>
+          <p class="index" data-reveal>05</p>
           <h2 class="band-title" data-reveal>Skills</h2>
         </div>
         <div class="band-body">
@@ -259,7 +300,7 @@
 
       <section class="wins-edu band" id="wins">
         <div class="band-rail">
-          <p class="index" data-reveal>05</p>
+          <p class="index" data-reveal>06</p>
           <h2 class="band-title" data-reveal>Wins &amp; school</h2>
         </div>
         <div class="band-body split">
@@ -306,13 +347,13 @@
 
       <section class="contact band" id="contact">
         <div class="band-rail">
-          <p class="index" data-reveal>06</p>
+          <p class="index" data-reveal>07</p>
           <h2 class="band-title" data-reveal>Contact</h2>
         </div>
         <div class="band-body">
-          <p class="lede" data-reveal>Let's build something sharp.</p>
+          <p class="lede" data-reveal>Let's craft the next interface.</p>
           <p class="copy" data-reveal>
-            Open to conversations about frontend leadership, AI-assisted product work, and ambitious
+            Open to conversations about frontend leadership, product UI systems, and ambitious
             mobile experiences.
           </p>
           <div class="contact-links" data-reveal>
@@ -330,7 +371,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Yogendra Danwar</p>
+      <p>© <span id="year"></span> Yogendra Danwar · Frontend Engineer</p>
       <a href="#top">Top</a>
     </footer>
 

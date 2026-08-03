@@ -8,7 +8,7 @@
 
   const onScroll = () => {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 16);
+    header.classList.toggle("is-scrolled", window.scrollY > 12);
   };
 
   onScroll();
@@ -44,6 +44,10 @@
     if (event.key === "Escape") closeMenu();
   });
 
+  window.addEventListener("resize", () => {
+    if (window.matchMedia("(min-width: 768px)").matches) closeMenu();
+  });
+
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const reveals = document.querySelectorAll("[data-reveal]");
 
@@ -52,7 +56,6 @@
     return;
   }
 
-  // Hero brand lines should appear immediately on load
   document.querySelectorAll(".hero [data-reveal]").forEach((el) => {
     requestAnimationFrame(() => el.classList.add("is-visible"));
   });
@@ -65,7 +68,7 @@
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px -5% 0px" }
   );
 
   reveals.forEach((el) => {
