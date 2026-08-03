@@ -8,7 +8,7 @@
 
   const onScroll = () => {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 24);
+    header.classList.toggle("is-scrolled", window.scrollY > 16);
   };
 
   onScroll();
@@ -45,12 +45,17 @@
   });
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const reveals = document.querySelectorAll(".reveal");
+  const reveals = document.querySelectorAll("[data-reveal]");
 
   if (reduceMotion || !("IntersectionObserver" in window)) {
     reveals.forEach((el) => el.classList.add("is-visible"));
     return;
   }
+
+  // Hero brand lines should appear immediately on load
+  document.querySelectorAll(".hero [data-reveal]").forEach((el) => {
+    requestAnimationFrame(() => el.classList.add("is-visible"));
+  });
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -60,8 +65,11 @@
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.14, rootMargin: "0px 0px -8% 0px" }
+    { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
   );
 
-  reveals.forEach((el) => observer.observe(el));
+  reveals.forEach((el) => {
+    if (el.closest(".hero")) return;
+    observer.observe(el);
+  });
 })();

@@ -18,22 +18,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230f766e' width='100' height='100' rx='16'/><text x='50' y='68' text-anchor='middle' font-size='52' font-family='system-ui' font-weight='700' fill='white'>Y</text></svg>" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23E85D04' width='100' height='100'/><text x='50' y='68' text-anchor='middle' font-size='52' font-family='system-ui' font-weight='800' fill='%230E1116'>Y</text></svg>"
+    />
   </head>
   <body>
-    <div class="grain" aria-hidden="true"></div>
-
     <header class="site-header" id="top">
-      <a class="logo" href="#top" aria-label="Yogendra Danwar home">YD</a>
+      <a class="logo" href="#top" aria-label="Yogendra Danwar home">Yogendra Danwar</a>
       <nav class="nav" aria-label="Primary">
         <a href="#work">Work</a>
         <a href="#skills">Skills</a>
-        <a href="#achievements">Wins</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+        <a href="#wins">Wins</a>
+        <a href="#contact">Contact</a>
       </nav>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span>
@@ -43,29 +44,31 @@
     <nav class="mobile-nav" aria-label="Mobile" hidden>
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
-      <a href="#achievements">Wins</a>
+      <a href="#wins">Wins</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <main>
       <section class="hero" aria-label="Introduction">
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-mesh"></div>
-          <div class="hero-orb hero-orb--one"></div>
-          <div class="hero-orb hero-orb--two"></div>
-          <div class="hero-grid"></div>
+        <div class="hero-media" aria-hidden="true">
+          <img
+            class="hero-photo"
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            width="2400"
+            height="1600"
+          />
         </div>
         <div class="hero-content">
-          <p class="hero-location reveal">Bengaluru, India</p>
-          <h1 class="hero-brand reveal">
-            <span class="brand-line">Yogendra</span>
-            <span class="brand-line">Danwar</span>
+          <h1 class="hero-brand">
+            <span class="brand-line" data-reveal>Yogendra</span>
+            <span class="brand-line" data-reveal>Danwar</span>
           </h1>
-          <p class="hero-tagline reveal">
-            Frontend + AI Engineer crafting fast, resilient mobile and web products.
+          <p class="hero-tagline" data-reveal>
+            Frontend + AI Engineer. Fast, resilient products for mobile and web.
           </p>
-          <div class="hero-actions reveal">
-            <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <div class="hero-actions" data-reveal>
+            <a class="btn btn-primary" href="mailto:yogendra.danwar@gmail.com">Email me</a>
             <a
               class="btn btn-ghost"
               href="https://in.linkedin.com/in/yogendradanwar"
@@ -75,21 +78,23 @@
             >
           </div>
         </div>
-        <a class="scroll-cue reveal" href="#about" aria-label="Scroll to about">
-          <span>Scroll</span>
-        </a>
       </section>
 
-      <section class="about section" id="about">
-        <div class="section-inner">
-          <p class="eyebrow reveal">About</p>
-          <h2 class="section-title reveal">Eight years shipping products people rely on every day.</h2>
-          <p class="about-copy reveal">
-            Frontend developer with deep experience in React, React Native, and TypeScript.
-            I specialize in performance, accessibility, and cross-platform bridges — delivering
-            measurable impact at scale for teams at Airtel Digital, Navi, and MakeMyTrip.
+      <section class="about band" id="about">
+        <div class="band-rail">
+          <p class="index" data-reveal>01</p>
+          <h2 class="band-title" data-reveal>About</h2>
+        </div>
+        <div class="band-body">
+          <p class="lede" data-reveal>
+            Eight years shipping products people rely on every day — React, React Native, and
+            TypeScript at Airtel Digital, Navi, and MakeMyTrip.
           </p>
-          <dl class="about-meta reveal">
+          <p class="copy" data-reveal>
+            I specialize in performance, accessibility, and cross-platform bridges — delivering
+            measurable impact in fast-paced product teams.
+          </p>
+          <dl class="meta" data-reveal>
             <div>
               <dt>Focus</dt>
               <dd>Mobile &amp; Web · AI tooling</dd>
@@ -106,20 +111,21 @@
         </div>
       </section>
 
-      <section class="work section" id="work">
-        <div class="section-inner">
-          <p class="eyebrow reveal">Experience</p>
-          <h2 class="section-title reveal">Where I've built momentum.</h2>
-
-          <ol class="timeline">
-            <li class="job reveal">
-              <div class="job-meta">
-                <time datetime="2023-07">07/2023 — Present</time>
-                <span class="job-place">Bengaluru</span>
+      <section class="work band" id="work">
+        <div class="band-rail">
+          <p class="index" data-reveal>02</p>
+          <h2 class="band-title" data-reveal>Work</h2>
+        </div>
+        <div class="band-body">
+          <ol class="chapters">
+            <li class="chapter" data-reveal>
+              <div class="chapter-year">
+                <span>2023</span>
+                <time datetime="2023-07">07/2023 — Present · Bengaluru</time>
               </div>
-              <div class="job-body">
+              <div class="chapter-copy">
                 <h3>Lead Frontend Engineer</h3>
-                <p class="job-company">Airtel Digital</p>
+                <p class="company">Airtel Digital</p>
                 <ul>
                   <li>Stabilized Airtel Digital BBPS — 10% fewer outage reports, 16% higher conversion.</li>
                   <li>Shipped feature-based accessibility that lifted engagement by 5%.</li>
@@ -129,14 +135,14 @@
               </div>
             </li>
 
-            <li class="job reveal">
-              <div class="job-meta">
-                <time datetime="2022-08">08/2022 — 06/2023</time>
-                <span class="job-place">Bengaluru</span>
+            <li class="chapter" data-reveal>
+              <div class="chapter-year">
+                <span>2022</span>
+                <time datetime="2022-08">08/2022 — 06/2023 · Bengaluru</time>
               </div>
-              <div class="job-body">
+              <div class="chapter-copy">
                 <h3>Senior Frontend Developer</h3>
-                <p class="job-company">Navi Technologies</p>
+                <p class="company">Navi Technologies</p>
                 <ul>
                   <li>Cut issue resolution time 10% with stronger error monitoring and logging.</li>
                   <li>Hardened CRM auth with react-google-login; shipped Continuity (+20% productivity).</li>
@@ -146,14 +152,14 @@
               </div>
             </li>
 
-            <li class="job reveal">
-              <div class="job-meta">
-                <time datetime="2021-06">06/2021 — 07/2022</time>
-                <span class="job-place">Gurugram</span>
+            <li class="chapter" data-reveal>
+              <div class="chapter-year">
+                <span>2021</span>
+                <time datetime="2021-06">06/2021 — 07/2022 · Gurugram</time>
               </div>
-              <div class="job-body">
+              <div class="chapter-copy">
                 <h3>Senior Frontend Developer</h3>
-                <p class="job-company">MakeMyTrip</p>
+                <p class="company">MakeMyTrip</p>
                 <ul>
                   <li>Improved stability 10% via crash logging; cut load time 5% with lazy-loaded images.</li>
                   <li>Shipped Complete Your Trip — 5% higher user satisfaction.</li>
@@ -163,14 +169,14 @@
               </div>
             </li>
 
-            <li class="job reveal">
-              <div class="job-meta">
-                <time datetime="2020-05">05/2020 — 06/2021</time>
-                <span class="job-place">Bengaluru</span>
+            <li class="chapter" data-reveal>
+              <div class="chapter-year">
+                <span>2020</span>
+                <time datetime="2020-05">05/2020 — 06/2021 · Bengaluru</time>
               </div>
-              <div class="job-body">
+              <div class="chapter-copy">
                 <h3>Frontend Developer</h3>
-                <p class="job-company">Head Digital Works</p>
+                <p class="company">Head Digital Works</p>
                 <ul>
                   <li>Revamped Cricket.com with real-time uninstall signals and dark mode (+15% retention).</li>
                   <li>Launched Stat-Attack game — 500 new users in month one.</li>
@@ -179,14 +185,14 @@
               </div>
             </li>
 
-            <li class="job reveal">
-              <div class="job-meta">
-                <time datetime="2017-01">01/2017 — 05/2020</time>
-                <span class="job-place">Pune</span>
+            <li class="chapter" data-reveal>
+              <div class="chapter-year">
+                <span>2017</span>
+                <time datetime="2017-01">01/2017 — 05/2020 · Pune</time>
               </div>
-              <div class="job-body">
+              <div class="chapter-copy">
                 <h3>Frontend Developer</h3>
-                <p class="job-company">QED42</p>
+                <p class="company">QED42</p>
                 <ul>
                   <li>Shipped Alt News iOS beta — 10% engagement lift.</li>
                   <li>Built Go City v2 on React with a headless CMS.</li>
@@ -198,100 +204,104 @@
         </div>
       </section>
 
-      <section class="skills section" id="skills">
-        <div class="section-inner">
-          <p class="eyebrow reveal">Toolkit</p>
-          <h2 class="section-title reveal">Skills that show up in the work.</h2>
-          <div class="skill-grid">
-            <article class="skill-block reveal">
-              <h3>Languages</h3>
-              <p>TypeScript, JavaScript, HTML5, CSS3</p>
-            </article>
-            <article class="skill-block reveal">
-              <h3>Frameworks</h3>
-              <p>React, React Native, Flutter, Next.js, Redux, Angular</p>
-            </article>
-            <article class="skill-block reveal">
-              <h3>AI Tools</h3>
-              <p>Claude, Cursor</p>
-            </article>
-            <article class="skill-block reveal">
-              <h3>Platforms</h3>
-              <p>Firebase, Jenkins, Git, Webpack, GraphQL, REST APIs</p>
-            </article>
-            <article class="skill-block reveal">
-              <h3>Quality</h3>
-              <p>Jest, Sentry, Bugsnag, Lighthouse, Accessibility</p>
-            </article>
-            <article class="skill-block reveal">
-              <h3>Craft</h3>
-              <p>UI/UX, performance, cross-platform bridges</p>
-            </article>
-          </div>
+      <section class="skills band" id="skills">
+        <div class="band-rail">
+          <p class="index" data-reveal>03</p>
+          <h2 class="band-title" data-reveal>Skills</h2>
         </div>
-      </section>
-
-      <section class="achievements section" id="achievements">
-        <div class="section-inner">
-          <p class="eyebrow reveal">Recognition</p>
-          <h2 class="section-title reveal">Moments that still matter.</h2>
-          <ul class="wins">
-            <li class="win reveal">
-              <span class="win-label">India Hacks</span>
-              <p>7th of 11,000 in game development.</p>
+        <div class="band-body">
+          <ul class="skill-list">
+            <li class="skill-row" data-reveal>
+              <span class="skill-label">Languages</span>
+              <span class="skill-value">TypeScript, JavaScript, HTML5, CSS3</span>
             </li>
-            <li class="win reveal">
-              <span class="win-label">Informatics Olympiad</span>
-              <p>Top 300 internationally (Silverzone).</p>
+            <li class="skill-row" data-reveal>
+              <span class="skill-label">Frameworks</span>
+              <span class="skill-value">React, React Native, Flutter, Next.js, Redux, Angular</span>
             </li>
-            <li class="win reveal">
-              <span class="win-label">MakeMyTrip</span>
-              <p>Go-Tripper of the Month — twice.</p>
+            <li class="skill-row" data-reveal>
+              <span class="skill-label">AI Tools</span>
+              <span class="skill-value">Claude, Cursor</span>
             </li>
-            <li class="win reveal">
-              <span class="win-label">Navi Hackathon</span>
-              <p>2nd place — won Apple AirPods.</p>
+            <li class="skill-row" data-reveal>
+              <span class="skill-label">Platforms</span>
+              <span class="skill-value">Firebase, Jenkins, Git, Webpack, GraphQL, REST APIs</span>
+            </li>
+            <li class="skill-row" data-reveal>
+              <span class="skill-label">Quality</span>
+              <span class="skill-value">Jest, Sentry, Bugsnag, Lighthouse, Accessibility</span>
+            </li>
+            <li class="skill-row" data-reveal>
+              <span class="skill-label">Craft</span>
+              <span class="skill-value">UI/UX, performance, cross-platform bridges</span>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="education section" id="education">
-        <div class="section-inner">
-          <p class="eyebrow reveal">Education</p>
-          <h2 class="section-title reveal">Foundations.</h2>
-          <div class="edu-grid">
-            <article class="edu reveal">
-              <h3>Master's in Computer Science</h3>
-              <p>Savitribai Phule Pune University</p>
-              <time datetime="2014-08">08/2014 — 05/2017 · Pune</time>
-            </article>
-            <article class="edu reveal">
-              <h3>Bachelor's in Computer Science</h3>
-              <p>Jaipur National University</p>
-              <time datetime="2011-08">08/2011 — 05/2014 · Jaipur</time>
-            </article>
+      <section class="wins-edu band" id="wins">
+        <div class="band-rail">
+          <p class="index" data-reveal>04</p>
+          <h2 class="band-title" data-reveal>Wins &amp; school</h2>
+        </div>
+        <div class="band-body split">
+          <div class="split-col" data-reveal>
+            <h3 class="split-heading">Recognition</h3>
+            <ul class="plain-list">
+              <li>
+                <strong>India Hacks</strong>
+                <span>7th of 11,000 in game development.</span>
+              </li>
+              <li>
+                <strong>Informatics Olympiad</strong>
+                <span>Top 300 internationally (Silverzone).</span>
+              </li>
+              <li>
+                <strong>MakeMyTrip</strong>
+                <span>Go-Tripper of the Month — twice.</span>
+              </li>
+              <li>
+                <strong>Navi Hackathon</strong>
+                <span>2nd place — won Apple AirPods.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="split-col" data-reveal>
+            <h3 class="split-heading">Education</h3>
+            <ul class="plain-list">
+              <li>
+                <strong>Master's in Computer Science</strong>
+                <span>Savitribai Phule Pune University · 08/2014 — 05/2017 · Pune</span>
+              </li>
+              <li>
+                <strong>Bachelor's in Computer Science</strong>
+                <span>Jaipur National University · 08/2011 — 05/2014 · Jaipur</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="contact section" id="contact">
-        <div class="section-inner contact-inner">
-          <p class="eyebrow reveal">Contact</p>
-          <h2 class="section-title reveal">Let's build something sharp.</h2>
-          <p class="contact-copy reveal">
-            Open to conversations about frontend leadership, AI-assisted product work, and ambitious mobile experiences.
+      <section class="contact band" id="contact">
+        <div class="band-rail">
+          <p class="index" data-reveal>05</p>
+          <h2 class="band-title" data-reveal>Contact</h2>
+        </div>
+        <div class="band-body">
+          <p class="lede" data-reveal>Let's build something sharp.</p>
+          <p class="copy" data-reveal>
+            Open to conversations about frontend leadership, AI-assisted product work, and ambitious
+            mobile experiences.
           </p>
-          <div class="contact-links reveal">
-            <a class="contact-link" href="mailto:yogendra.danwar@gmail.com">yogendra.danwar@gmail.com</a>
+          <div class="contact-links" data-reveal>
+            <a href="mailto:yogendra.danwar@gmail.com">yogendra.danwar@gmail.com</a>
             <a
-              class="contact-link"
               href="https://in.linkedin.com/in/yogendradanwar"
               target="_blank"
               rel="noopener noreferrer"
-              >LinkedIn profile</a
+              >LinkedIn</a
             >
-            <a class="contact-link" href="tel:+919602305824">+91 9602305824</a>
+            <a href="tel:+919602305824">+91 9602305824</a>
           </div>
         </div>
       </section>
@@ -299,7 +309,7 @@
 
     <footer class="site-footer">
       <p>© <span id="year"></span> Yogendra Danwar</p>
-      <a href="#top">Back to top</a>
+      <a href="#top">Top</a>
     </footer>
 
     <script src="script.js"></script>
