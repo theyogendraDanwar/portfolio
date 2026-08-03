@@ -527,6 +527,17 @@ a:hover {
   font-size: 0.98rem;
 }
 
+.plain-bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 42rem;
+}
+
+.plain-bullets li + li {
+  margin-top: 0.65rem;
+}
+
 @media (min-width: 800px) {
   .split {
     grid-template-columns: 1fr 1fr;
