@@ -439,12 +439,21 @@ a:hover {
 /* Project */
 .project-body {
   max-width: none;
+  display: grid;
+  gap: 3rem;
 }
 
 .project-feature {
   display: grid;
   gap: 2rem;
   align-items: center;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-feature:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .project-role {
@@ -468,6 +477,15 @@ a:hover {
   margin: 0.85rem 0 0;
   color: var(--ink-soft);
   max-width: 34rem;
+}
+
+.project-copy code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+  border-radius: 3px;
 }
 
 .project-tags {
@@ -494,6 +512,37 @@ a:hover {
   justify-content: center;
 }
 
+.brand-panel {
+  width: min(100%, 280px);
+  min-height: 280px;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 30% 20%, rgba(232, 93, 4, 0.16), transparent 55%),
+    linear-gradient(160deg, #fafbfc, #e8edf3);
+}
+
+.brand-panel img {
+  width: 96px;
+  height: 96px;
+  margin-inline: auto;
+  border-radius: 22px;
+  box-shadow: 0 16px 36px rgba(14, 17, 22, 0.16);
+}
+
+.brand-panel p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink-soft);
+}
+
 .phone-frame {
   width: min(100%, 240px);
   padding: 0.55rem;
@@ -514,9 +563,23 @@ a:hover {
 }
 
 @media (min-width: 860px) {
+  .project-body {
+    gap: 3.5rem;
+  }
+
   .project-feature {
     grid-template-columns: 1.15fr 0.85fr;
     gap: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .project-feature:nth-child(even) .project-copy {
+    order: 2;
+  }
+
+  .project-feature:nth-child(even) .project-visual {
+    order: 1;
+    justify-content: start;
   }
 
   .project-visual {
@@ -525,6 +588,11 @@ a:hover {
 
   .phone-frame {
     width: min(100%, 280px);
+  }
+
+  .brand-panel {
+    width: min(100%, 300px);
+    min-height: 320px;
   }
 }
 
