@@ -3,34 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#f4f5f7" />
+    <meta name="theme-color" content="#0a0c10" />
     <meta
       name="description"
-      content="Yogendra Danwar — Lead Frontend Engineer & creator of Lockwell and Homelab Remote. Crafting polished web and mobile interfaces with React, React Native, Flutter, and TypeScript."
+      content="Yogendra Danwar — Lead Frontend Engineer & creator of Lockwell and Homelab Remote."
     />
     <meta name="author" content="Yogendra Danwar" />
     <meta property="og:title" content="Yogendra Danwar — Lead Frontend Engineer" />
     <meta
       property="og:description"
-      content="Frontend engineer building high-scale consumer apps — creator of Lockwell and Homelab Remote."
+      content="Frontend engineer crafting high-scale interfaces — creator of Lockwell and Homelab Remote."
     />
     <meta property="og:type" content="website" />
     <title>Yogendra Danwar — Lead Frontend Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23E85D04' width='100' height='100'/><text x='50' y='68' text-anchor='middle' font-size='52' font-family='system-ui' font-weight='800' fill='%230E1116'>Y</text></svg>"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23FF6A1A' width='100' height='100'/><text x='50' y='68' text-anchor='middle' font-size='52' font-family='system-ui' font-weight='800' fill='%230A0C10'>Y</text></svg>"
     />
   </head>
   <body>
+    <canvas id="webgl" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+
     <header class="site-header" id="top">
-      <a class="logo" href="#top" aria-label="Yogendra Danwar home">YD</a>
+      <a class="logo" href="#top">YD</a>
       <nav class="nav" aria-label="Primary">
         <a href="#projects">Projects</a>
         <a href="#work">Work</a>
@@ -52,51 +55,43 @@
 
     <main>
       <section class="hero" aria-label="Introduction">
-        <div class="hero-media" aria-hidden="true">
-          <img
-            class="hero-photo"
-            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=2400&q=80"
-            alt=""
-            width="2400"
-            height="1600"
-          />
+        <p class="kicker reveal">Lead Frontend Engineer</p>
+        <h1 class="brand">
+          <span class="brand-line reveal">Yogendra</span>
+          <span class="brand-line accent reveal">Danwar</span>
+        </h1>
+        <p class="tagline reveal">
+          Interfaces people trust — React, React Native, Flutter, TypeScript. Creator of Lockwell
+          and Homelab Remote.
+        </p>
+        <div class="actions reveal">
+          <a class="btn primary" href="#projects">Explore projects</a>
+          <a class="btn ghost" href="mailto:yogendra.danwar@gmail.com">Email me</a>
         </div>
-        <div class="hero-content">
-          <p class="hero-kicker" data-reveal>Lead Frontend Engineer</p>
-          <h1 class="hero-brand">
-            <span class="brand-line" data-reveal>Yogendra</span>
-            <span class="brand-line" data-reveal>Danwar</span>
-          </h1>
-          <p class="hero-tagline" data-reveal>
-            Interfaces people trust — React, React Native, Flutter, and TypeScript. Creator of
-            Lockwell and Homelab Remote.
-          </p>
-          <div class="hero-actions" data-reveal>
-            <a class="btn btn-primary" href="#projects">See projects</a>
-            <a class="btn btn-ghost" href="mailto:yogendra.danwar@gmail.com">Email me</a>
-          </div>
-        </div>
+        <div class="scroll-hint reveal" aria-hidden="true">Scroll</div>
       </section>
 
-      <section class="about band" id="about">
-        <div class="band-rail">
-          <p class="index" data-reveal>01</p>
-          <h2 class="band-title" data-reveal>About</h2>
-        </div>
-        <div class="band-body">
-          <p class="lede" data-reveal>
+      <section class="panel" id="about">
+        <div class="panel-inner glass">
+          <p class="index">01 — About</p>
+          <h2>Frontend craft at product scale.</h2>
+          <p>
             Frontend engineer with 9+ years shipping high-scale consumer interfaces across fintech,
-            telecom, and travel.
+            telecom, and travel. I design and build fast, accessible product UI — architecture,
+            interaction polish, and measurable outcomes.
           </p>
-          <p class="copy" data-reveal>
-            I design and build fast, accessible product UI — architecture, interaction polish, and
-            measurable outcomes. Stack: React, React Native, Flutter, Next.js, TypeScript, BFF
-            integration, and AI-assisted engineering. Also the creator of
+          <p>
+            Also the creator of
             <a href="https://lockwellvault.in/" target="_blank" rel="noopener noreferrer">Lockwell</a>
             and
-            <a href="https://theyogendradanwar.github.io/homelab-remote-site/" target="_blank" rel="noopener noreferrer">Homelab Remote</a>.
+            <a
+              href="https://theyogendradanwar.github.io/homelab-remote-site/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Homelab Remote</a
+            >.
           </p>
-          <dl class="meta" data-reveal>
+          <dl class="meta">
             <div>
               <dt>Craft</dt>
               <dd>UI systems · Motion · A11y</dd>
@@ -113,94 +108,79 @@
         </div>
       </section>
 
-      <section class="project band" id="projects">
-        <div class="band-rail">
-          <p class="index" data-reveal>02</p>
-          <h2 class="band-title" data-reveal>Projects</h2>
-        </div>
-        <div class="band-body project-body">
-          <article class="project-feature" data-reveal>
-            <div class="project-copy">
-              <p class="project-role">Creator</p>
-              <h3>Lockwell</h3>
+      <section class="panel" id="projects">
+        <div class="panel-inner">
+          <p class="index">02 — Projects</p>
+          <h2>Things I shipped as creator.</h2>
+          <div class="projects">
+            <article class="project glass">
+              <div class="project-top">
+                <img src="media/lockwell-icon.png" alt="" width="64" height="64" />
+                <div>
+                  <p class="role">Creator</p>
+                  <h3>Lockwell</h3>
+                </div>
+              </div>
               <p>
-                A KeePass-compatible password manager for Android and iOS. Open and create
+                KeePass-compatible password manager for Android and iOS. Open and create
                 <code>.kdbx</code> vaults with PIN / biometrics — no Lockwell account. Your data
                 stays where you put it.
               </p>
-              <ul class="project-tags">
+              <ul class="tags">
                 <li>React Native</li>
                 <li>iOS</li>
                 <li>Android</li>
                 <li>KeePass</li>
               </ul>
-              <a
-                class="btn btn-primary"
-                href="https://lockwellvault.in/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <a class="btn primary" href="https://lockwellvault.in/" target="_blank" rel="noopener noreferrer"
                 >View Lockwell</a
               >
-            </div>
-            <div class="project-visual">
-              <div class="brand-panel brand-panel--lockwell">
-                <img
-                  src="media/lockwell-icon.png"
-                  alt="Lockwell app icon"
-                  width="120"
-                  height="120"
-                  loading="lazy"
-                />
-                <p>KeePass vaults on device</p>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-feature" data-reveal>
-            <div class="project-copy">
-              <p class="project-role">Creator</p>
-              <h3>Homelab Remote</h3>
+            <article class="project glass">
+              <div class="project-top">
+                <div class="project-shot">
+                  <img
+                    src="https://theyogendradanwar.github.io/homelab-remote-site/media/shot-home.webp"
+                    alt="Homelab Remote home screen"
+                    width="120"
+                    height="240"
+                    loading="lazy"
+                  />
+                </div>
+                <div>
+                  <p class="role">Creator</p>
+                  <h3>Homelab Remote</h3>
+                </div>
+              </div>
               <p>
-                A Flutter remote for your self-hosted stack on iOS and Android — Sonarr, Radarr,
+                Flutter remote for your self-hosted stack on iOS and Android — Sonarr, Radarr,
                 SABnzbd, NZBGet, Synology, and more. Local / Remote reachability, queues, library,
                 and search. Credentials stay on device.
               </p>
-              <ul class="project-tags">
+              <ul class="tags">
                 <li>Flutter</li>
                 <li>iOS</li>
                 <li>Android</li>
                 <li>Self-hosted</li>
               </ul>
               <a
-                class="btn btn-primary"
+                class="btn primary"
                 href="https://theyogendradanwar.github.io/homelab-remote-site/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >View Homelab Remote</a
               >
-            </div>
-            <div class="project-visual">
-              <div class="phone-frame">
-                <img
-                  src="https://theyogendradanwar.github.io/homelab-remote-site/media/shot-home.webp"
-                  alt="Homelab Remote home screen showing services and downloads"
-                  width="390"
-                  height="844"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="ai band" id="ai">
-        <div class="band-rail">
-          <p class="index" data-reveal>03</p>
-          <h2 class="band-title" data-reveal>AI</h2>
-        </div>
-        <div class="band-body">
-          <ul class="plain-bullets" data-reveal>
+      <section class="panel" id="ai">
+        <div class="panel-inner glass">
+          <p class="index">03 — AI</p>
+          <h2>AI in the workflow.</h2>
+          <ul class="bullets">
             <li>Built an AI-powered Credit Score Simulator using Agentic AI and CIBIL for 1M+ users.</li>
             <li>Leveraged Cursor and Claude to accelerate frontend development, debugging, and code reviews.</li>
             <li>Used AI-assisted workflows for code generation, testing, and documentation.</li>
@@ -208,202 +188,145 @@
         </div>
       </section>
 
-      <section class="work band" id="work">
-        <div class="band-rail">
-          <p class="index" data-reveal>04</p>
-          <h2 class="band-title" data-reveal>Work</h2>
-        </div>
-        <div class="band-body">
-          <ol class="chapters">
-            <li class="chapter" data-reveal>
-              <div class="chapter-year">
-                <span>2023</span>
-                <time datetime="2023-07">07/2023 — Present · Bengaluru</time>
+      <section class="panel" id="work">
+        <div class="panel-inner">
+          <p class="index">04 — Work</p>
+          <h2>Where the craft met scale.</h2>
+          <ol class="jobs">
+            <li class="job glass">
+              <div class="job-head">
+                <span class="year">2023</span>
+                <div>
+                  <h3>Lead Frontend Engineer</h3>
+                  <p class="company">Airtel Digital · 07/2023 — Present · Bengaluru</p>
+                </div>
               </div>
-              <div class="chapter-copy">
-                <h3>Lead Frontend Engineer</h3>
-                <p class="company">Airtel Digital</p>
-                <ul>
-                  <li>Led redesign of Airtel credit score, personal loan, and EMI sections impacting over 10% users, enhancing user experience and navigation.</li>
-                  <li>Led development of a credit score simulator with CIBIL, improving credit understanding for over 1M users using agentic AI.</li>
-                  <li>Increased customer retention by 7% by implementing sim binding capability in EMI journey.</li>
-                  <li>Enhanced BBPS platform reliability and integration, boosting conversion rates by 16% and reducing outage reports by 10%.</li>
-                  <li>Launched Location-Based Top Billers functionality, increasing monthly transacting users by 10%.</li>
-                  <li>Implemented accessibility-driven features in the Airtel Digital app, leading to a 5% rise in user engagement.</li>
-                  <li>Optimized financial product recommendations for 3M users, leveraging personalized content and BFF architecture.</li>
-                  <li>Defined frontend architecture standards for BBPS and Airtel Finance, enhancing scalability and delivery across teams.</li>
-                  <li>Introduced All Bills optimizations and user interaction enhancements, contributing to an 8% increase in engagement.</li>
-                </ul>
-              </div>
+              <ul>
+                <li>Led redesign of Airtel credit score, personal loan, and EMI sections impacting over 10% users, enhancing user experience and navigation.</li>
+                <li>Led development of a credit score simulator with CIBIL, improving credit understanding for over 1M users using agentic AI.</li>
+                <li>Increased customer retention by 7% by implementing sim binding capability in EMI journey.</li>
+                <li>Enhanced BBPS platform reliability and integration, boosting conversion rates by 16% and reducing outage reports by 10%.</li>
+                <li>Launched Location-Based Top Billers functionality, increasing monthly transacting users by 10%.</li>
+                <li>Implemented accessibility-driven features in the Airtel Digital app, leading to a 5% rise in user engagement.</li>
+                <li>Optimized financial product recommendations for 3M users, leveraging personalized content and BFF architecture.</li>
+                <li>Defined frontend architecture standards for BBPS and Airtel Finance, enhancing scalability and delivery across teams.</li>
+                <li>Introduced All Bills optimizations and user interaction enhancements, contributing to an 8% increase in engagement.</li>
+              </ul>
             </li>
 
-            <li class="chapter" data-reveal>
-              <div class="chapter-year">
-                <span>2022</span>
-                <time datetime="2022-08">08/2022 — 06/2023 · Bengaluru</time>
+            <li class="job glass">
+              <div class="job-head">
+                <span class="year">2022</span>
+                <div>
+                  <h3>Senior Frontend Developer</h3>
+                  <p class="company">Navi Technologies · 08/2022 — 06/2023 · Bengaluru</p>
+                </div>
               </div>
-              <div class="chapter-copy">
-                <h3>Senior Frontend Developer</h3>
-                <p class="company">Navi Technologies</p>
-                <ul>
-                  <li>Enhanced error monitoring, resulting in 10% decrease in issue resolution time by adding logging service.</li>
-                  <li>Developed Continuity functionality improving productivity by 20%.</li>
-                  <li>Established Transliteration functionality for CRM improving customer feedback support by 10%.</li>
-                  <li>Expanded in-house calling services by adding Genesys functionality, resulting in a 5% increase in call efficiency.</li>
-                  <li>Accelerated operational efficiency by developing the collection field app for agents, reducing processing time by 40%.</li>
-                  <li>Improved CRM security and access by implementing React Google Login and integrating BFF for authentication workflows.</li>
-                </ul>
-              </div>
+              <ul>
+                <li>Enhanced error monitoring, resulting in 10% decrease in issue resolution time by adding logging service.</li>
+                <li>Developed Continuity functionality improving productivity by 20%.</li>
+                <li>Established Transliteration functionality for CRM improving customer feedback support by 10%.</li>
+                <li>Expanded in-house calling services by adding Genesys functionality, resulting in a 5% increase in call efficiency.</li>
+                <li>Accelerated operational efficiency by developing the collection field app for agents, reducing processing time by 40%.</li>
+                <li>Improved CRM security and access by implementing React Google Login and integrating BFF for authentication workflows.</li>
+              </ul>
             </li>
 
-            <li class="chapter" data-reveal>
-              <div class="chapter-year">
-                <span>2021</span>
-                <time datetime="2021-06">06/2021 — 07/2022 · Gurugram</time>
+            <li class="job glass">
+              <div class="job-head">
+                <span class="year">2021</span>
+                <div>
+                  <h3>Senior Frontend Developer</h3>
+                  <p class="company">MakeMyTrip · 06/2021 — 07/2022 · Gurugram</p>
+                </div>
               </div>
-              <div class="chapter-copy">
-                <h3>Senior Frontend Developer</h3>
-                <p class="company">MakeMyTrip</p>
-                <ul>
-                  <li>Improved app stability by 10% by implementing crash logging and reducing load times by 5% with lazy load images.</li>
-                  <li>Improved user satisfaction by 5% by developing Complete Your Trip functionality.</li>
-                  <li>Migrated 20% code segments to react-navigation, enhancing code efficiency with a native-flux wrapper.</li>
-                  <li>Enhanced feature deployment efficiency by 5% by implementing remote config using Google Firebase.</li>
-                </ul>
-              </div>
+              <ul>
+                <li>Improved app stability by 10% by implementing crash logging and reducing load times by 5% with lazy load images.</li>
+                <li>Improved user satisfaction by 5% by developing Complete Your Trip functionality.</li>
+                <li>Migrated 20% code segments to react-navigation, enhancing code efficiency with a native-flux wrapper.</li>
+                <li>Enhanced feature deployment efficiency by 5% by implementing remote config using Google Firebase.</li>
+              </ul>
             </li>
 
-            <li class="chapter" data-reveal>
-              <div class="chapter-year">
-                <span>2020</span>
-                <time datetime="2020-05">05/2020 — 06/2021 · Bengaluru</time>
+            <li class="job glass">
+              <div class="job-head">
+                <span class="year">2020</span>
+                <div>
+                  <h3>Frontend Developer</h3>
+                  <p class="company">Head Digital Works · 05/2020 — 06/2021 · Bengaluru</p>
+                </div>
               </div>
-              <div class="chapter-copy">
-                <h3>Frontend Developer</h3>
-                <p class="company">Head Digital Works</p>
-                <ul>
-                  <li>Revamp Cricket.com project with real-time uninstall functionality and dark mode which boosted user retention by 15%.</li>
-                  <li>Launched a Stat-Attack game, attracting 500 new users in the first month.</li>
-                </ul>
-              </div>
+              <ul>
+                <li>Revamp Cricket.com project with real-time uninstall functionality and dark mode which boosted user retention by 15%.</li>
+                <li>Launched a Stat-Attack game, attracting 500 new users in the first month.</li>
+              </ul>
             </li>
 
-            <li class="chapter" data-reveal>
-              <div class="chapter-year">
-                <span>2017</span>
-                <time datetime="2017-01">01/2017 — 05/2020 · Pune</time>
+            <li class="job glass">
+              <div class="job-head">
+                <span class="year">2017</span>
+                <div>
+                  <h3>Frontend Developer</h3>
+                  <p class="company">QED42 · 01/2017 — 05/2020 · Pune</p>
+                </div>
               </div>
-              <div class="chapter-copy">
-                <h3>Frontend Developer</h3>
-                <p class="company">QED42</p>
-                <ul>
-                  <li>Improved user engagement by 10% by releasing the Beta version of the iOS app for Alt News.</li>
-                  <li>Created v2 site for Go City using React in a headless CMS configuration.</li>
-                  <li>Optimized performance by developing 10 reusable components for Nomad X, improving load times by 7%.</li>
-                </ul>
-              </div>
+              <ul>
+                <li>Improved user engagement by 10% by releasing the Beta version of the iOS app for Alt News.</li>
+                <li>Created v2 site for Go City using React in a headless CMS configuration.</li>
+                <li>Optimized performance by developing 10 reusable components for Nomad X, improving load times by 7%.</li>
+              </ul>
             </li>
           </ol>
         </div>
       </section>
 
-      <section class="skills band" id="skills">
-        <div class="band-rail">
-          <p class="index" data-reveal>05</p>
-          <h2 class="band-title" data-reveal>Skills</h2>
-        </div>
-        <div class="band-body">
-          <ul class="skill-list">
-            <li class="skill-row" data-reveal>
-              <span class="skill-label">Frontend</span>
-              <span class="skill-value">React, React Native, Next.js, TypeScript, JavaScript, HTML5, CSS3, Flutter, Vue.js, Sass, SCSS</span>
-            </li>
-            <li class="skill-row" data-reveal>
-              <span class="skill-label">Tools</span>
-              <span class="skill-value">Git, Jenkins, Webpack, Jest, Sentry, Bugsnag, Lighthouse, Firebase, Playwright, Storybook</span>
-            </li>
-            <li class="skill-row" data-reveal>
-              <span class="skill-label">Architecture</span>
-              <span class="skill-value">Redux, GraphQL, REST APIs, BFF, Accessibility, MobX, Feature Flags, CI/CD, Micro Frontends</span>
-            </li>
-            <li class="skill-row" data-reveal>
-              <span class="skill-label">Backend</span>
-              <span class="skill-value">Node.js, Java</span>
-            </li>
-            <li class="skill-row" data-reveal>
-              <span class="skill-label">AI</span>
-              <span class="skill-value">Cursor, Claude, Agentic AI, Prompt Engineering</span>
-            </li>
+      <section class="panel" id="skills">
+        <div class="panel-inner glass">
+          <p class="index">05 — Skills</p>
+          <h2>The toolkit behind the work.</h2>
+          <ul class="skills">
+            <li><span>Frontend</span><em>React, React Native, Next.js, TypeScript, JavaScript, HTML5, CSS3, Flutter, Vue.js, Sass, SCSS</em></li>
+            <li><span>Tools</span><em>Git, Jenkins, Webpack, Jest, Sentry, Bugsnag, Lighthouse, Firebase, Playwright, Storybook</em></li>
+            <li><span>Architecture</span><em>Redux, GraphQL, REST APIs, BFF, Accessibility, MobX, Feature Flags, CI/CD, Micro Frontends</em></li>
+            <li><span>Backend</span><em>Node.js, Java</em></li>
+            <li><span>AI</span><em>Cursor, Claude, Agentic AI, Prompt Engineering</em></li>
           </ul>
         </div>
       </section>
 
-      <section class="wins-edu band" id="wins">
-        <div class="band-rail">
-          <p class="index" data-reveal>06</p>
-          <h2 class="band-title" data-reveal>Wins &amp; school</h2>
-        </div>
-        <div class="band-body split">
-          <div class="split-col" data-reveal>
-            <h3 class="split-heading">Recognition</h3>
-            <ul class="plain-list">
-              <li>
-                <strong>Airtel Kudos</strong>
-                <span>Received 2 kudos at Airtel for rapid deliveries and high-quality code.</span>
-              </li>
-              <li>
-                <strong>India Hacks</strong>
-                <span>7th of 11,000 in game development.</span>
-              </li>
-              <li>
-                <strong>Informatics Olympiad</strong>
-                <span>Top 300 internationally (Silverzone).</span>
-              </li>
-              <li>
-                <strong>MakeMyTrip</strong>
-                <span>Go-Tripper of the Month — twice.</span>
-              </li>
-              <li>
-                <strong>Navi Hackathon</strong>
-                <span>2nd place — won Apple AirPods.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="split-col" data-reveal>
-            <h3 class="split-heading">Education</h3>
-            <ul class="plain-list">
-              <li>
-                <strong>Master's in Computer Science</strong>
-                <span>Savitribai Phule Pune University · 08/2014 — 05/2017 · Pune</span>
-              </li>
-              <li>
-                <strong>Bachelor's in Computer Science</strong>
-                <span>Jaipur National University · 08/2011 — 05/2014 · Jaipur</span>
-              </li>
-            </ul>
+      <section class="panel" id="wins">
+        <div class="panel-inner glass">
+          <p class="index">06 — Wins &amp; school</p>
+          <div class="split">
+            <div>
+              <h2>Recognition</h2>
+              <ul class="plain">
+                <li><strong>Airtel Kudos</strong><span>2 kudos for rapid deliveries and high-quality code.</span></li>
+                <li><strong>India Hacks</strong><span>7th of 11,000 in game development.</span></li>
+                <li><strong>Informatics Olympiad</strong><span>Top 300 internationally (Silverzone).</span></li>
+                <li><strong>MakeMyTrip</strong><span>Go-Tripper of the Month — twice.</span></li>
+                <li><strong>Navi Hackathon</strong><span>2nd place — won Apple AirPods.</span></li>
+              </ul>
+            </div>
+            <div>
+              <h2>Education</h2>
+              <ul class="plain">
+                <li><strong>Master's in Computer Science</strong><span>Savitribai Phule Pune University · 08/2014 — 05/2017 · Pune</span></li>
+                <li><strong>Bachelor's in Computer Science</strong><span>Jaipur National University · 08/2011 — 05/2014 · Jaipur</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="contact band" id="contact">
-        <div class="band-rail">
-          <p class="index" data-reveal>07</p>
-          <h2 class="band-title" data-reveal>Contact</h2>
-        </div>
-        <div class="band-body">
-          <p class="lede" data-reveal>Let's craft the next interface.</p>
-          <p class="copy" data-reveal>
-            Open to conversations about frontend leadership, product UI systems, and ambitious
-            mobile experiences.
-          </p>
-          <div class="contact-links" data-reveal>
+      <section class="panel" id="contact">
+        <div class="panel-inner glass contact">
+          <p class="index">07 — Contact</p>
+          <h2>Let's craft the next interface.</h2>
+          <p>Open to frontend leadership, product UI systems, and ambitious mobile experiences.</p>
+          <div class="contact-links">
             <a href="mailto:yogendra.danwar@gmail.com">yogendra.danwar@gmail.com</a>
-            <a
-              href="https://in.linkedin.com/in/yogendradanwar"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
+            <a href="https://in.linkedin.com/in/yogendradanwar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="tel:+919602305824">+91 9602305824</a>
           </div>
         </div>
@@ -415,6 +338,13 @@
       <a href="#top">Top</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

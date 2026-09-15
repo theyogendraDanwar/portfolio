@@ -1,12 +1,12 @@
 # Yogendra Danwar — Portfolio
 
-Personal portfolio site for **Yogendra Danwar**, Lead Frontend + AI Engineer.
+Three.js portfolio for **Yogendra Danwar**, Lead Frontend Engineer.
 
-Live site: [theyogendradanwar.github.io/portfolio](https://theyogendradanwar.github.io/portfolio/)
+Live: [theyogendradanwar.github.io/portfolio](https://theyogendradanwar.github.io/portfolio/)
 
 ## Local preview
 
-Open `index.html` in a browser, or serve the folder:
+Serve the folder over HTTP (ES modules need a server):
 
 ```bash
 npx serve .
@@ -14,4 +14,4 @@ npx serve .
 
 ## Stack
 
-Static HTML, CSS, and vanilla JavaScript — no build step. Deployed via GitHub Pages from the `main` branch root.
+Vanilla HTML/CSS + Three.js (CDN ES modules). No build step. GitHub Pages from `main` root.
